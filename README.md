@@ -3,10 +3,8 @@
 - Supports multiple Discord tokens from `tokens.txt`  
 - Automatically claims ExitLag promo codes via Discord API  
 - Saves successfully claimed promo codes to `gift_codes.txt`  
-- Shows success and error logs with timestamps and color-coded UI in the console  
-- Optional proxy support (can be disabled)  
-- Thread-safe file writing for safe concurrent access  
-
+- Optional proxy support (can be disabled)
+- 
 ## Setup
 
 1. Clone or download this repository.  
