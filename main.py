@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor
 promotion_id = "1379198759644303561"
 claim_url = f"https://discord.com/api/v9/outbound-promotions/{promotion_id}/claim"
 lock = threading.Lock()
-REQUEST_DELAY = 0.5  # Adjust for safety
+REQUEST_DELAY = 0.5 
 
 # Load tokens
 def load_tokens(limit=None):
@@ -27,7 +27,7 @@ def load_tokens(limit=None):
                 break
     return tokens
 
-# Load proxies from proxies.txt
+
 def load_proxies():
     proxies = []
     with open("proxies.txt", "r", encoding="utf-8") as f:
@@ -35,12 +35,12 @@ def load_proxies():
             line = line.strip()
             if not line:
                 continue
-            if '@' in line:  # USER:PASS@IP:PORT
+            if '@' in line:  
                 auth, host = line.split('@')
                 user, pw = auth.split(':')
                 proxy = f"http://{user}:{pw}@{host}"
             else:
-                proxy = f"http://{line}"  # IP:PORT
+                proxy = f"http://{line}"  
             proxies.append({
                 "http": proxy,
                 "https": proxy
