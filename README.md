@@ -1,7 +1,7 @@
 ## Features
 
 - Supports multiple Discord tokens from `tokens.txt`  
-- Automatically claims ExitLag promo codes via Discord API  
+- Automatically claims all gift codes via Discord API  
 - Saves successfully claimed promo codes to `gift_codes.txt`  
 - Optional proxy support (can be disabled)
 - 
